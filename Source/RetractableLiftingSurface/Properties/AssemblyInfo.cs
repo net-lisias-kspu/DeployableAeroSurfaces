@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("RetractableLiftingSurface")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("© 2016 LinuxGuruGamer, 2018 LisiasT")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
