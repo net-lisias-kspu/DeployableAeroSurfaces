@@ -1,5 +1,7 @@
 Retractable Lifting Surface :: Change Log
 
+* 2018-0430: 0.1.5.2 (linuxgurugamer) for KSP 1.4.1
+	+ Added error message if no deploy animation found
 * 2018-0317: 0.1.5.1 (linuxgurugamer) for KSP 1.4.1
 	+ Updated for 1.4.1
 * 2017-1011: 0.1.5 (linuxgurugamer) for KSP 1.3.1
