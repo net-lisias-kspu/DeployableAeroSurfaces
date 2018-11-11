@@ -33,3 +33,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion(RetractableLiftingSurface.Version.Number)]
 [assembly: AssemblyFileVersion(RetractableLiftingSurface.Version.Number)]
+
+[assembly: KSPAssemblyDependency("KSPe", 2, 0)]

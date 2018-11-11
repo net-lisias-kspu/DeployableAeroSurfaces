@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace RetractableLiftingSurface
@@ -50,7 +46,7 @@ namespace RetractableLiftingSurface
             deployAnimation = GetDeployAnimation();
             if (deployAnimation == null)
             {
-                Debug.Log("RetractableLiftingSurface can't find a deploy animation for: " + this.part.partInfo.title);
+                Log.warn("RetractableLiftingSurface can't find a deploy animation for: {0}", this.part.partInfo.title);
                 Destroy(this);
                 return;
             }
@@ -82,7 +78,7 @@ namespace RetractableLiftingSurface
             if (HighLogic.LoadedSceneIsEditor)
                 lastAnimtime = deployAnimation.animTime;
 
-          //  Debug.Log("lastAnimtime: " + lastAnimtime.ToString() + "  deployAnimation.animTime: " + deployAnimation.animTime.ToString());
+            Log.dbg("lastAnimtime: {0}  deployAnimation.animTime: {1}", lastAnimtime, deployAnimation.animTime);
             float m;
             if (retracted == 0)
             {
@@ -164,7 +160,7 @@ namespace RetractableLiftingSurface
             }
             catch (System.Exception x)
             {
-                Debug.Log(string.Format("{0} ERROR: {1}", modName, x.Message));
+                Log.error("{0} ERROR: {1}", modName, x.Message);
             }
 
             return myAnimation;
