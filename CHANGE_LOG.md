@@ -1,5 +1,7 @@
 Retractable Lifting Surface :: Change Log
 
+* 2017-0113: 0.1.2 (linuxgurugamer) for KSP 1.1
+	+ Added license file
 * 2016-1224: 0.1.1 (linuxgurugamer) for KSP 1.1
 	+ fixed bug where control surface settings were uncontrollable
 * 2016-1224: 0.1.0 (linuxgurugamer) for KSP 1.1
