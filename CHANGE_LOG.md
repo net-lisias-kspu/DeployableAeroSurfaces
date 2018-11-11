@@ -1,5 +1,7 @@
 Retractable Lifting Surface :: Change Log
 
+* 2018-0317: 0.1.5.1 (linuxgurugamer) for KSP 1.4.1
+	+ Updated for 1.4.1
 * 2017-1011: 0.1.5 (linuxgurugamer) for KSP 1.3.1
 	+ No changelog provided
 * 2017-0528: 0.1.4 (linuxgurugamer) for KSP 1.3
