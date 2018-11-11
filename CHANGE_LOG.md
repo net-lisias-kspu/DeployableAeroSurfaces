@@ -1,5 +1,7 @@
 Retractable Lifting Surface :: Change Log
 
+* 2017-0528: 0.1.4 (linuxgurugamer) for KSP 1.3
+	+ Updated for 1.3
 * 2017-0401: 0.1.3 (linuxgurugamer) for KSP 1.1
 	+ Added easing in of control surface after animation finishes.  Ease-in is over a period of 1 second
 * 2017-0113: 0.1.2 (linuxgurugamer) for KSP 1.1
