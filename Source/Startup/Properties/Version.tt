@@ -10,7 +10,7 @@
 <#@ output extension=".cs" #>
 <#@ import namespace="System.IO" #>
 <#
-	string PROJECT_NAME = "RetractableLiftingSurface";
+	string PROJECT_NAME = "DeployableAeroSurfaces";
 	int major = 0;
 	int minor = 0;
 	int patch = 0;

@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DeployableCtrlSrf.Properties")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Deployable Control Surface /L Unleashed")]
+[assembly: AssemblyDescription("Simple PartModule for Aero Surface deployment")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DeployableCtrlSrf.Properties")]
-[assembly: AssemblyCopyright("Public Domain")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany(DeployableAeroSurfaces.LegalMamboJambo.Company)]
+[assembly: AssemblyProduct(DeployableAeroSurfaces.LegalMamboJambo.Product)]
+[assembly: AssemblyCopyright(DeployableAeroSurfaces.LegalMamboJambo.Copyright)]
+[assembly: AssemblyTrademark(DeployableAeroSurfaces.LegalMamboJambo.Trademark)]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

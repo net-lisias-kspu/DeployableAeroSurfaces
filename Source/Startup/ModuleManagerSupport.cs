@@ -23,7 +23,7 @@
 */
 using System.Collections.Generic;
 
-namespace RetractableLiftingSurface
+namespace DeployableAeroSurfaces
 {
 	public static class ModuleManagerSupport
 	{

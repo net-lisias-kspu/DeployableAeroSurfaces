@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RetractableLiftingSurface")]
+[assembly: AssemblyTitle("Retractable Lifting Surface /L Unleashed")]
 [assembly: AssemblyDescription("This is a small module which allows you to have a folding wing or other retractable lifting surface.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany(RetractableLiftingSurface.LegalMamboJambo.Company)]
-[assembly: AssemblyProduct(RetractableLiftingSurface.LegalMamboJambo.Product)]
-[assembly: AssemblyCopyright(RetractableLiftingSurface.LegalMamboJambo.Copyright)]
-[assembly: AssemblyTrademark(RetractableLiftingSurface.LegalMamboJambo.Trademark)]
+[assembly: AssemblyCompany(DeployableAeroSurfaces.LegalMamboJambo.Company)]
+[assembly: AssemblyProduct(DeployableAeroSurfaces.LegalMamboJambo.Product)]
+[assembly: AssemblyCopyright(DeployableAeroSurfaces.LegalMamboJambo.Copyright)]
+[assembly: AssemblyTrademark(DeployableAeroSurfaces.LegalMamboJambo.Trademark)]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -31,7 +31,5 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion(RetractableLiftingSurface.Version.Number)]
-[assembly: AssemblyFileVersion(RetractableLiftingSurface.Version.Number)]
-[assembly: KSPAssemblyDependency("KSPe", 2, 4)]
-[assembly: KSPAssemblyDependency("KSPe.UI", 2, 4)]
+[assembly: AssemblyVersion(DeployableAeroSurfaces.Version.Number)]
+[assembly: AssemblyFileVersion(DeployableAeroSurfaces.Version.Number)]

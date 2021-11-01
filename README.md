@@ -1,16 +1,16 @@
-# Retractable Lifting Surface /L Unleashed
+# Deployable Aero Surfaces /L Unleashed
 
-This is a small module which allows you to have a folding wing or other retractable lifting surface.
+Modules which allows you to have a folding wing or other retractable lifting surface, as well control surfaces.
 
 [Unleashed](https://ksp.lisias.net/add-ons-unleashed/) fork by Lisias.
 
 
 ## In a Hurry
 
-* [Latest Release](https://github.com/net-lisias-kspu/RetractableLiftingSurface/releases)
-	+ [Binaries](https://github.com/net-lisias-kspu/RetractableLiftingSurface/tree/Archive)
-* [Source](https://github.com/net-lisias-kspu/RetractableLiftingSurface)
-* [Project's README](https://github.com/net-lisias-kspu/RetractableLiftingSurface/blob/master/README.md)
+* [Latest Release](https://github.com/net-lisias-kspu/DeployableAeroSurfaces/releases)
+	+ [Binaries](https://github.com/net-lisias-kspu/DeployableAeroSurfaces/tree/Archive)
+* [Source](https://github.com/net-lisias-kspu/DeployableAeroSurfaces)
+* [Project's README](https://github.com/net-lisias-kspu/DeployableAeroSurfaces/blob/master/README.md)
 * [Change Log](./CHANGE_LOG.md)
 * [TODO](./TODO.md) list
 
@@ -21,7 +21,24 @@ This is a small module which allows you to have a folding wing or other retracta
 
 Additionally, the integrated control surface is eased in once the wing is deployed, so that it doesn't kick in instantly
 
-### Instructions for use
+### Module ModuleDeployableAero
+
+This PartModule prevents aerodynamic surfaces from working based on an animation state or any other module implementing IScalarModule.
+
+Use:
+
+```
+MODULE
+{
+	name = ModuleDeployableAero
+	DeployModuleIndex = 0 //Index of module implementing IScalarModule
+	DeployModulePos = 1 //Position (0 or 1) of animation considered deployed. Part spawns at 0.
+}
+```
+
+### RetractableLiftingSurface
+
+#### Instructions for use
 
 Add the following module to the cfg file (which replaces the ModuleLiftingSurface):
 
@@ -42,7 +59,7 @@ MODULE
 }
 ```
 
-### Known Clients
+#### Known Clients
 
 * [Kerbonov Kn-2 Cockpit Module](http://forum.kerbalspaceprogram.com/index.php?/topic/60380-*)
 * [REKT Escape Pod Mod](http://forum.kerbalspaceprogram.com/index.php?/topic/150837-*)
@@ -65,7 +82,7 @@ To install, place the GameData folder inside your Kerbal Space Program folder.
 
 ### Licensing
 
-* Retractable Lifting Surface is double licensed as follows:
+* Deployable Aero Surfaces is double licensed as follows:
 	+ [SKL 1.0](https://ksp.lisias.net/SKL-1_0.txt). See [here](./LICENSE.KSPe.SKL-1_0)
 		+ You are free to:
 			- Use : unpack and use the material in any computer or device
@@ -89,13 +106,16 @@ To install, place the GameData folder inside your Kerbal Space Program folder.
 			- You don't mix your work with GPL incompatible works.
 	* If by some reason the GPL would be invalid for you, rest assured that you still retain the right to Use the Work under SKL 1.0. 
 
-Releases previous to 0.2.2 are still available under the MIT license [here](https://github.com/net-lisias-kspu/RetractableLiftingSurface/tree/Source/MIT) and on the in upstream's repositories. Please note this [statement](https://www.gnu.org/licenses/license-list.en.html#Expat) from FSF.
+Releases previous to 0.2.2 are still available under the MIT license [here](https://github.com/net-lisias-kspu/DeployableAeroSurfaces/tree/Source/MIT) and on the in upstream's repositories. Please note this [statement](https://www.gnu.org/licenses/license-list.en.html#Expat) from FSF.
 
 Please note the copyrights and trademarks in [NOTICE](./NOTICE).
 
 
 ## UPSTREAM
 
-* [LinuxGuruGamer](https://forum.kerbalspaceprogram.com/index.php?/profile/129964-linuxgurugamer/) ROOT
+
+* [DerpyFirework](https://github.com/DerpyFirework) ROOT
+	+ [GitHub](https://github.com/DerpyFirework/DeployableAeroSurfaces)
+* [LinugGuruGamer](https://forum.kerbalspaceprogram.com/index.php?/profile/129964-linuxgurugamer/) ROOT
 	+ [Forum](https://forum.kerbalspaceprogram.com/index.php?/topic/145583-15x-retractableliftingsurface-module-released/)
 	+ [GitHub](https://github.com/linuxgurugamer/RetractableLiftingSurface)

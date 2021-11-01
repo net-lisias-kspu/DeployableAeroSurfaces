@@ -1,5 +1,5 @@
 ﻿/*
-	This file is part of Retractable Lifting Surface /L Unleashed
+	This file is part of Deployable Aero Surfaces /L Unleashed
 		© 2018-2021 Lisias T : http://lisias.net <support@lisias.net>
 
 	THIS FILE is licensed to you under:
@@ -17,29 +17,29 @@ using System.Diagnostics;
 
 using KSPe.Util.Log;
 
-namespace RetractableLiftingSurface
+namespace DeployableAeroSurfaces
 {
-	internal static class Log
+	public static class Log
 	{
-		private static readonly Logger LOG = Logger.CreateForType<RetractableLiftingSurface>();
+		private static readonly Logger LOG = Logger.CreateForType<Startup>();
 
-		internal static void force(string msg, params object[] @params)
+		public static void force(string msg, params object[] @params)
 		{
 			LOG.force(msg, @params);
 		}
 
-		internal static void error(string msg, params object[] @params)
+		public static void error(string msg, params object[] @params)
 		{
 			LOG.error(msg, @params);
 		}
 
-		internal static void warn(string msg, params object[] @params)
+		public static void warn(string msg, params object[] @params)
 		{
 			LOG.warn(msg, @params);
 		}
 
 		[Conditional("DEBUG")]	
-		internal static void dbg(string msg, params object[] @params)
+		public static void dbg(string msg, params object[] @params)
 		{
 			LOG.dbg(msg, @params);
 		}

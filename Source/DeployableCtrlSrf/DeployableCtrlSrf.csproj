@@ -42,10 +42,12 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\LIB\managed\1.2.2\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\LIB\managed\1.2.2\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -56,35 +58,21 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Startup\Startup.csproj">
+      <Project>{6A23490A-05D8-4F45-BDC9-2C5CF8DD18A2}</Project>
+      <Name>Startup</Name>
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />
   </ProjectExtensions>
   <PropertyGroup>
-    <PreBuildEvent>"$(DevEnvDir)\texttransform.exe" "$(ProjectDir)AssemblyVersion.tt"</PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>
-	set KSPDIR=$(KSPDIR)
-
-	IF "%25KSPDIR%25"=="" (
-
-		ECHO Configuration error - KSPDIR not specified in project.
-
-		ECHO Either set KSPDIR environment variable or edit BetterLoadSaveGame.Common.props
-
-		PAUSE
-
-		GOTO DONE
-
-	)
-
-	start /D $(SolutionDir) /WAIT deploy.bat  $(TargetDir) $(TargetFileName)
-
-	if $(ConfigurationName) == Release (	
-
-		start /D $(SolutionDir) /WAIT buildRelease.bat $(TargetDir) $(TargetFileName)
-
-	)</PostBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

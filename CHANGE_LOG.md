@@ -1,4 +1,4 @@
-Retractable Lifting Surface /L Unleashed :: Change Log
+Deaployable Aero Surfaces /L Unleashed :: Change Log
 
 * 2018-1111: 0.1.5.5 (Lisias) for KSP 1.4.1+; 1.5
 	+ Adding KSPe Logging facilities
