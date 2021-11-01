@@ -23,6 +23,11 @@ namespace RetractableLiftingSurface
 	{
 		private static readonly Logger LOG = Logger.CreateForType<RetractableLiftingSurface>();
 
+		internal static void force(string msg, params object[] @params)
+		{
+			LOG.force(msg, @params);
+		}
+
 		internal static void error(string msg, params object[] @params)
 		{
 			LOG.error(msg, @params);
